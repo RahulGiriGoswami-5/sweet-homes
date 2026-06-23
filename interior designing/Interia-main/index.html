@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sweet Homes — Award-winning luxury interior design studio crafting bespoke residential and commercial spaces with timeless elegance.">
+    <title>Sweet Homes — Luxury Interior Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="shortcut icon" href="source/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="luxury-style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════ NAVIGATION ═══════════════════════════════════════ -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">SWEET HOMES</span>
+                <span class="logo-sub">INTERIOR STUDIO</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" onclick="closeMobile()">About</a></li>
+            <li><a href="#services" onclick="closeMobile()">Services</a></li>
+            <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+            <li><a href="#testimonials" onclick="closeMobile()">Testimonials</a></li>
+            <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Award-Winning Interior Studio</p>
+            <h1 class="hero-title">Design Your<br><em>Dream Space</em></h1>
+            <p class="hero-subtitle">Crafting bespoke living environments with timeless elegance, meticulous attention
+                to detail, and a passion for the extraordinary.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">Explore Portfolio</a>
+                <a href="#contact" class="btn-outline">Start a Project</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span></span>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ ABOUT ═════════════════════════════════════════ -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="source/dining-room1.jpg" alt="Luxury dining room interior design" loading="lazy">
+                    </div>
+                    <div class="about-img-accent">
+                        <img src="source/master-bedroom1.jpg" alt="Master bedroom interior design" loading="lazy">
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-num">12+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-label">About Us</p>
+                    <h2 class="section-title">We Create Spaces<br>That <em>Inspire</em></h2>
+                    <p class="body-text">Sweet Homes is a premier interior design studio dedicated to transforming
+                        spaces
+                        into extraordinary experiences. Our team of award-winning designers blends classical sensibility
+                        with contemporary vision to craft environments that are as functional as they are beautiful.</p>
+                    <p class="body-text">From concept to completion, every project is a collaboration — we listen, we
+                        envision, and we create spaces that reflect your unique story.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">500+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">1,500+</span>
+                            <span class="stat-label">Expert Designers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">21</span>
+                            <span class="stat-label">Cities Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SERVICES ══════════════════════════════════════ -->
+    <section id="services" class="services section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Our Expertise</p>
+                <h2 class="section-title">End-to-End Design<br><em>Solutions</em></h2>
+                <p class="section-desc">From concept to installation, we provide comprehensive interior design services
+                    tailored to every space and lifestyle.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/living1.jpg" alt="Living room interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Living Rooms</h3>
+                        <p>Curated spaces for gathering, relaxing, and making memories — blending comfort with refined
+                            aesthetics.</p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/kitchen1.jpg" alt="Kitchen interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Kitchens</h3>
+                        <p>Modular, high-quality kitchens designed for the way you actually cook, entertain, and live.
+                        </p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/master-bedroom2.jpg" alt="Master bedroom interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Master Bedrooms</h3>
+                        <p>Serene retreats crafted for rest and renewal, where every detail speaks of quiet luxury.</p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/dining-room3.jpg" alt="Dining room interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Dining Rooms</h3>
+                        <p>Elegant dining environments that elevate every meal into a special occasion.</p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/bathroom1.jpg" alt="Bathroom interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Bathrooms</h3>
+                        <p>Spa-like sanctuaries where premium materials and thoughtful layouts create daily rituals of
+                            indulgence.</p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="source/wardrobe1.jpg" alt="Wardrobe interior design" loading="lazy">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-info">
+                        <h3>Wardrobes & Storage</h3>
+                        <p>Custom storage solutions that are beautiful, functional, and perfectly aligned with your
+                            lifestyle.</p>
+                        <span class="service-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ PROJECTS ══════════════════════════════════════ -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Portfolio</p>
+                <h2 class="section-title">Our <em>Projects</em></h2>
+                <p class="section-desc">A curated selection of spaces we have transformed — each a story of craft,
+                    vision, and collaboration.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="living">Living Rooms</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="bathroom">Bathroom</button>
+            </div>
+
+            <!-- Masonry Gallery -->
+            <div class="masonry-gallery" id="masonryGallery">
+
+                <div class="masonry-item tall" data-category="living">
+                    <div class="masonry-inner">
+                        <img src="source/living2.jpg" alt="Modern living room" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Living Room</span>
+                            <h4>Modern Minimal Living</h4>
+                            <p>3 BHK, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="kitchen">
+                    <div class="masonry-inner">
+                        <img src="source/kitchen2.jpg" alt="Luxury modular kitchen" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Kitchen</span>
+                            <h4>Chef's Modular Kitchen</h4>
+                            <p>Villa, Bengaluru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="dining">
+                    <div class="masonry-inner">
+                        <img src="source/dining-room4.jpg" alt="Elegant dining room" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Dining</span>
+                            <h4>Refined Dining Alcove</h4>
+                            <p>Penthouse, Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item wide" data-category="bedroom">
+                    <div class="masonry-inner">
+                        <img src="source/master-bedroom3.jpg" alt="Master bedroom suite" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Bedroom</span>
+                            <h4>Serene Master Suite</h4>
+                            <p>4 BHK, Gurugram</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="bathroom">
+                    <div class="masonry-inner">
+                        <img src="source/bathroom3.jpg" alt="Spa-style bathroom" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Bathroom</span>
+                            <h4>Spa Sanctuary</h4>
+                            <p>Luxury Apartment, Pune</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item tall" data-category="living">
+                    <div class="masonry-inner">
+                        <img src="source/living4.jpg" alt="Contemporary living area" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Living Room</span>
+                            <h4>Contemporary Open Plan</h4>
+                            <p>2 BHK, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="kitchen">
+                    <div class="masonry-inner">
+                        <img src="source/kitchen5.jpg" alt="White kitchen design" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Kitchen</span>
+                            <h4>All-White Culinary Space</h4>
+                            <p>3 BHK, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="dining">
+                    <div class="masonry-inner">
+                        <img src="source/dining-room6.jpg" alt="Dining room with chandelier" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Dining</span>
+                            <h4>Grand Dining Room</h4>
+                            <p>Bungalow, Kolkata</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item wide" data-category="bedroom">
+                    <div class="masonry-inner">
+                        <img src="source/master-bedroom5.jpg" alt="Luxury bedroom with walk-in" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Bedroom</span>
+                            <h4>Ivory & Gold Retreat</h4>
+                            <p>5 BHK, Ahmedabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="bathroom">
+                    <div class="masonry-inner">
+                        <img src="source/bathroom6.jpg" alt="Marble bathroom" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Bathroom</span>
+                            <h4>Marble & Matte Black</h4>
+                            <p>Villa, Jaipur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="living">
+                    <div class="masonry-inner">
+                        <img src="source/living6.jpg" alt="Cozy living room" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Living Room</span>
+                            <h4>Warm Minimalist Haven</h4>
+                            <p>2 BHK, Noida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="masonry-item" data-category="kitchen">
+                    <div class="masonry-inner">
+                        <img src="source/kitchen7.jpg" alt="Dark kitchen design" loading="lazy">
+                        <div class="masonry-caption">
+                            <span class="caption-tag">Kitchen</span>
+                            <h4>Matte Dark Kitchen</h4>
+                            <p>Penthouse, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ TESTIMONIALS ══════════════════════════════════ -->
+    <section id="testimonials" class="testimonials section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Client Stories</p>
+                <h2 class="section-title">What Our Clients<br><em>Say</em></h2>
+            </div>
+        </div>
+
+        <!-- Full-width Photo Slider -->
+        <div class="testi-slider" id="testiSlider">
+            <!-- Slide 1 -->
+            <div class="testi-slide active">
+                <img src="source/living8.jpg" alt="Living room project" loading="lazy">
+                <div class="testi-overlay"></div>
+                <div class="testi-quote">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"The design of our living room by Sweet Homes is simply spectacular. They understood our
+                        vibe perfectly and delivered a space that feels both cozy and ultra-luxurious."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Rohit Paul &amp; Shveta</strong>
+                        <span>Living Room, Gurugram</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="testi-slide">
+                <img src="source/master-bedroom7.jpg" alt="Bedroom project" loading="lazy">
+                <div class="testi-overlay"></div>
+                <div class="testi-quote">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Our experience with Sweet Homes was exceptional. The bedroom design is a peaceful
+                        sanctuary with gorgeous textures and smart layout options that make it a joy to wake up in every
+                        morning."</blockquote>
+                    <div class="testimonial-author">
+                        <strong>Swati &amp; Gaurav</strong>
+                        <span>Master Suite, Bangalore</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="testi-slide">
+                <img src="source/kitchen3.jpg" alt="Kitchen project" loading="lazy">
+                <div class="testi-overlay"></div>
+                <div class="testi-quote">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"The modular kitchen Sweet Homes built for us is highly functional and absolutely
+                        beautiful. Every cabinet and pull-out is ergonomically perfect. We love cooking here!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Puja Bhatia</strong>
+                        <span>Modular Kitchen, Gurugram</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="testi-slide">
+                <img src="source/dining-room5.jpg" alt="Dining room project" loading="lazy">
+                <div class="testi-overlay"></div>
+                <div class="testi-quote">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"We reached out to Sweet Homes to design our open dining space, and they created a
+                        masterpiece. It's the highlight of our home where we love hosting friends and family."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Ananya &amp; Vikram Shah</strong>
+                        <span>Dining Area, Mumbai</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="testi-slide">
+                <img src="source/bathroom9.jpg" alt="Bathroom project" loading="lazy">
+                <div class="testi-overlay"></div>
+                <div class="testi-quote">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Our master bathroom feels like a five-star spa resort. The stone selection, minimal
+                        fixtures, and perfect ambient lighting elevated the room beyond our wildest expectations."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <strong>Meera &amp; Arjun Kapoor</strong>
+                        <span>Spa Bathroom, Pune</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="testi-prev" id="testiPrev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testi-next" id="testiNext" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots -->
+            <div class="testi-dots" id="testiDots">
+                <button class="testi-dot active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="testi-dot" data-slide="1" aria-label="Slide 2"></button>
+                <button class="testi-dot" data-slide="2" aria-label="Slide 3"></button>
+                <button class="testi-dot" data-slide="3" aria-label="Slide 4"></button>
+                <button class="testi-dot" data-slide="4" aria-label="Slide 5"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ GALLERY STRIP ════════════════════════════════ -->
+    <section class="gallery-strip" aria-label="Gallery preview strip">
+        <div class="strip-track" id="stripTrack">
+            <img src="source/dining-room2.jpg" alt="Dining room" loading="lazy">
+            <img src="source/master-bedroom4.jpg" alt="Master bedroom" loading="lazy">
+            <img src="source/kitchen3.jpg" alt="Kitchen" loading="lazy">
+            <img src="source/bathroom4.jpg" alt="Bathroom" loading="lazy">
+            <img src="source/living5.jpg" alt="Living room" loading="lazy">
+            <img src="source/dining-room7.jpg" alt="Dining area" loading="lazy">
+            <img src="source/wardrobe2.jpg" alt="Wardrobe" loading="lazy">
+            <img src="source/master-bedroom7.jpg" alt="Bedroom" loading="lazy">
+            <!-- Duplicate for seamless loop -->
+            <img src="source/dining-room2.jpg" alt="Dining room" loading="lazy" aria-hidden="true">
+            <img src="source/master-bedroom4.jpg" alt="Master bedroom" loading="lazy" aria-hidden="true">
+            <img src="source/kitchen3.jpg" alt="Kitchen" loading="lazy" aria-hidden="true">
+            <img src="source/bathroom4.jpg" alt="Bathroom" loading="lazy" aria-hidden="true">
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CONTACT ════════════════════════════════════ -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">Get In Touch</p>
+                    <h2 class="section-title">Let's Create<br><em>Something Beautiful</em></h2>
+                    <p class="body-text">Tell us about your space, your vision, and your lifestyle. We'll craft a design
+                        experience tailored entirely to you.</p>
+                    <div class="contact-details">
+                        <a href="tel:8879109025" class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span class="ci-label">Call Us</span>
+                                <span class="ci-value">+91 88791 09025</span>
+                            </div>
+                        </a>
+                        <a href="mailto:meet2005pokar@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="ci-label">Email Us</span>
+                                <span class="ci-value">meet2005pokar@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=+918879109025&text=Hi! I am interested in interior design services."
+                            target="_blank" class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <span class="ci-label">WhatsApp</span>
+                                <span class="ci-value">Message us directly</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Aarav" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Sharma" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input type="email" id="emailInput" name="email" placeholder="aarav@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="" disabled selected>Select a space</option>
+                                <option value="full-home">Full Home Interior</option>
+                                <option value="living-room">Living Room</option>
+                                <option value="kitchen">Kitchen</option>
+                                <option value="bedroom">Bedroom</option>
+                                <option value="bathroom">Bathroom</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput">Your Vision</label>
+                            <textarea id="messageInput" name="message" rows="4"
+                                placeholder="Tell us about your dream space…"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ FOOTER ══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">SWEET HOMES</span>
+                        <span class="logo-sub">INTERIOR STUDIO</span>
+                    </div>
+                    <p>Crafting extraordinary living environments with timeless elegance since 2012.</p>
+                    <div class="social-links">
+                        <a href="https://api.whatsapp.com/send/?phone=+918879109025&text=Hey There!" target="_blank"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/meetpatel_2801/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100061907891820" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i
+                                class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Design Ideas</h4>
+                    <ul>
+                        <li><a href="#projects">Living Rooms</a></li>
+                        <li><a href="#projects">Kitchens</a></li>
+                        <li><a href="#projects">Master Bedrooms</a></li>
+                        <li><a href="#projects">Dining Rooms</a></li>
+                        <li><a href="#projects">Bathrooms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#testimonials">Client Stories</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Mumbai" target="_blank">Mumbai</a></li>
+                        <li><a href="https://www.google.com/maps/place/New+Delhi" target="_blank">New Delhi</a></li>
+                        <li><a href="https://www.google.com/maps/place/Bengaluru" target="_blank">Bengaluru</a></li>
+                        <li><a href="https://www.google.com/maps/place/Kolkata" target="_blank">Kolkata</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Sweet Homes Interior Studio. All Rights Reserved.</p>
+                <p>Designed with care &amp; crafted with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="luxury-code.js"></script>
+</body>
+
+</html>
