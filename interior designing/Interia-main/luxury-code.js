@@ -173,10 +173,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── GALLERY STRIP: pause on reduced motion ───────────────
-const stripTrack = document.getElementById('stripTrack');
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches && stripTrack) {
-    stripTrack.style.animation = 'none';
-}
+
 
 // ── TESTIMONIALS SLIDER ────────────────────────────────────
 const testiSlider = document.getElementById('testiSlider');
@@ -191,9 +188,9 @@ if (testiSlider) {
     function showSlide(index) {
         slides[currentSlide].classList.remove('active');
         dots[currentSlide].classList.remove('active');
-        
+
         currentSlide = (index + slides.length) % slides.length;
-        
+
         slides[currentSlide].classList.add('active');
         dots[currentSlide].classList.add('active');
     }
