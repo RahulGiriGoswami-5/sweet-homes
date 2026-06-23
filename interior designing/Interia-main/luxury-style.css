@@ -1511,3 +1511,17 @@ ul {
         height: 180px;
     }
 }
+
+.btn-primary span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-primary:hover {
+    background: #e3c99a !important;
+    color: #1a1814 !important;
+}
+
+.btn-primary:hover::before {
+    transform: none !important;
+}
