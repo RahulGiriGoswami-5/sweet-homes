@@ -738,8 +738,8 @@ ul {
 
 /* Masonry */
 .masonry-gallery {
-    columns: 3;
-    column-gap: 20px;
+    columns: 2;
+    column-gap: 30px;
 }
 
 .masonry-item {
