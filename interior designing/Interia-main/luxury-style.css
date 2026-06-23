@@ -1543,31 +1543,17 @@ ul {
     transform: none !important;
 }
 
-.masonry-item:nth-child(2) img,
-.masonry-item:nth-child(7) img,
-.masonry-item:nth-child(12) img {
-    transform: scale(1.18);
-    object-position: center top;
-}
-
-.masonry-item:nth-child(2) img,
-.masonry-item:nth-child(7) img,
-.masonry-item:nth-child(12) img {
-    transform: scale(1.25);
-    object-position: center top;
+.masonry-item:nth-child(2) img {
+    transform: scale(1.32);
+    object-position: center 5%;
 }
 
 .masonry-item:nth-child(7) img {
-    transform: scale(1.25);
-    object-position: center 20%;
-}
-
-.masonry-item:nth-child(2) img {
-    transform: scale(1.25);
-    object-position: center 15%;
+    transform: scale(1.45);
+    object-position: center -5%;
 }
 
 .masonry-item:nth-child(12) img {
-    transform: scale(1.25);
-    object-position: center 20%;
+    transform: scale(1.32);
+    object-position: center 5%;
 }
