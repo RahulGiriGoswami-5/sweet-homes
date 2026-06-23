@@ -1542,3 +1542,10 @@ ul {
 .btn-primary:hover::before {
     transform: none !important;
 }
+
+.masonry-item:nth-child(2) img,
+.masonry-item:nth-child(7) img,
+.masonry-item:nth-child(12) img {
+    transform: scale(1.18);
+    object-position: center top;
+}
