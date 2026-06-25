@@ -176,65 +176,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 // ── TESTIMONIALS SLIDER ────────────────────────────────────
-const testiSlider = document.getElementById('testiSlider');
-if (testiSlider) {
-    const slides = testiSlider.querySelectorAll('.testi-slide');
-    const dots = testiSlider.querySelectorAll('.testi-dot');
-    const prevBtn = document.getElementById('testiPrev');
-    const nextBtn = document.getElementById('testiNext');
-    let currentSlide = 0;
-    let slideInterval;
 
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        dots[currentSlide].classList.remove('active');
+document.addEventListener("DOMContentLoaded", () => {
 
-        currentSlide = (index + slides.length) % slides.length;
+    const cards = [...document.querySelectorAll(".stack-card")];
+    const totalCards = cards.length;
 
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-        showSlide(currentSlide - 1);
-    }
-
-    function startAutoSlide() {
-        stopAutoSlide();
-        slideInterval = setInterval(nextSlide, 6000);
-    }
-
-    function stopAutoSlide() {
-        if (slideInterval) {
-            clearInterval(slideInterval);
-        }
-    }
-
-    if (nextBtn) nextBtn.addEventListener('click', () => {
-        nextSlide();
-        startAutoSlide();
+    cards.forEach((card, i) => {
+        card.style.zIndex = i + 1;
     });
 
-    if (prevBtn) prevBtn.addEventListener('click', () => {
-        prevSlide();
-        startAutoSlide();
-    });
+    const currentScale = cards.map(() => 1);
+    const targetScale = cards.map(() => 1);
 
-    dots.forEach((dot, idx) => {
-        dot.addEventListener('click', () => {
-            showSlide(idx);
-            startAutoSlide();
+    function lerp(a, b, t) {
+        return a + (b - a) * t;
+    }
+
+    function tick() {
+        cards.forEach((card, i) => {
+            const rect = card.getBoundingClientRect();
+            const stickyTop = 100;
+
+            let progress = (stickyTop - rect.top) / stickyTop;
+            progress = Math.max(0, Math.min(progress, 1));
+
+            const depthFactor = (totalCards - i - 1) / totalCards;
+            targetScale[i] = 1 - progress * 0.055 * depthFactor;
+
+            currentScale[i] = lerp(currentScale[i], targetScale[i], 0.08);
+
+            card.style.transform = `scale(${currentScale[i]})`;
         });
-    });
 
-    // Start auto slide
-    startAutoSlide();
+        requestAnimationFrame(tick);
+    }
 
-    // Pause auto slide on hover
-    testiSlider.addEventListener('mouseenter', stopAutoSlide);
-    testiSlider.addEventListener('mouseleave', startAutoSlide);
-}
+    requestAnimationFrame(tick);
+
+});
