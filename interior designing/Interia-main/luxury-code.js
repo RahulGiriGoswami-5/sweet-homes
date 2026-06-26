@@ -215,3 +215,41 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(tick);
 
 });
+// ── PRELOADER ──────────────────────────────────────────────
+(function initPreloader() {
+    const preloader = document.getElementById('preloader');
+    if (!preloader) return;
+
+    const strip = preloader.querySelector('.preloader-strip');
+    const logo = document.getElementById('preloaderLogo');
+    const realLogoWrap = document.querySelector('.nav-logo');
+
+    document.body.classList.add('preloading');
+
+    // Step 1 (0 - 1.8s): images scroll. Then fade strip out, fade logo in.
+    setTimeout(() => {
+        strip.classList.add('fade-out');
+        logo.classList.add('show');
+    }, 1800);
+
+    // Step 2: logo holds centered for 2s (fade takes .6s), then flies to nav logo
+    setTimeout(() => {
+        const target = realLogoWrap.getBoundingClientRect();
+        const current = logo.getBoundingClientRect();
+
+        const scale = target.width / current.width;
+        const tx = target.left + target.width / 2 - window.innerWidth / 2;
+        const ty = target.top + target.height / 2 - window.innerHeight / 2;
+
+        logo.style.setProperty('--tx', `calc(-50% + ${tx}px)`);
+        logo.style.setProperty('--ty', `calc(-50% + ${ty}px)`);
+        logo.style.setProperty('--ts', scale);
+        logo.classList.add('move-to-nav');
+    }, 3400);
+
+    setTimeout(() => {
+        preloader.classList.add('hide');
+        document.body.classList.remove('preloading');
+        setTimeout(() => preloader.remove(), 600);
+    }, 4500);
+})();
