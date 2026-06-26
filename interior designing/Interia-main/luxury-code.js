@@ -253,3 +253,41 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => preloader.remove(), 600);
     }, 4500);
 })();
+
+// ── STATS STRIP: count-up animation ───────────────────────
+(function initStatsCounter() {
+    const grid = document.querySelector('.stats-strip-grid');
+    if (!grid) return;
+
+    const numbers = grid.querySelectorAll('.stat-strip-num');
+
+    function animateCount(el) {
+        const target = parseInt(el.dataset.count, 10);
+        const duration = 1600;
+        const startTime = performance.now();
+
+        function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            el.textContent = Math.floor(eased * target);
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target;
+            }
+        }
+        requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                grid.classList.add('visible');
+                numbers.forEach(animateCount);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(grid);
+})();
